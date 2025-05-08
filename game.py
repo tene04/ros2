@@ -1,5 +1,6 @@
 import pygame
 import sys
+import numpy as np
 
 # Inicialización
 pygame.init()
@@ -17,9 +18,11 @@ WINNER_FONT = pygame.font.SysFont("Arial", 60)
 pala_ancho, pala_alto = 10, 100
 pelota = 15
 pala_velocidad = 6
-velocidad_pelota_x, velocidad_pelota_y = 8, 8 
+velocidad_pelota_original_x, velocidad_pelota_original_y = 4, 4
+incremento_velocidad_pelota_x, incremento_velocidad_pelota_y = 0.3, 0.3
 
 # Inicialización de objetos
+velocidad_pelota_x, velocidad_pelota_y = velocidad_pelota_original_x, velocidad_pelota_original_y
 left_paddle = pygame.Rect(20, alto//2 - pala_alto//2, pala_ancho, pala_alto)
 right_paddle = pygame.Rect(ancho - 30, alto//2 - pala_alto//2, pala_ancho, pala_alto)
 ball = pygame.Rect(ancho//2 - pelota//2, alto//2 - pelota//2, pelota, pelota)
@@ -57,10 +60,15 @@ def handle_movement(keys): # detecta los movimientos de los jugadores
         right_paddle.y -= pala_velocidad
     if keys[pygame.K_DOWN] and right_paddle.bottom < alto:
         right_paddle.y += pala_velocidad
-
+        
+def increment_speed():
+    global velocidad_pelota_x, velocidad_pelota_y, incremento_velocidad_pelota_x, incremento_velocidad_pelota_y
+    velocidad_pelota_x += np.sign(velocidad_pelota_x) * incremento_velocidad_pelota_x
+    velocidad_pelota_y += np.sign(velocidad_pelota_y) * incremento_velocidad_pelota_y
+            
 def move_ball(): # mueve el balón
-    global velocidad_pelota_x, velocidad_pelota_y, score_left, score_right
-
+    global velocidad_pelota_x, velocidad_pelota_y, score_left, score_right, velocidad_pelota_original_x, velocidad_pelota_original_y
+    
     ball.x += velocidad_pelota_x
     ball.y += velocidad_pelota_y
 
@@ -69,18 +77,25 @@ def move_ball(): # mueve el balón
 
     if ball.colliderect(left_paddle) and velocidad_pelota_x < 0:
         velocidad_pelota_x *= -1
+        increment_speed()
+
     if ball.colliderect(right_paddle) and velocidad_pelota_x > 0:
         velocidad_pelota_x *= -1
-
+        increment_speed()
+        
     if ball.left <= 0:
         score_right += 1
+        new_set_time = 100
         reset_ball()
+        
     if ball.right >= ancho:
         score_left += 1
+        new_set_time = 100
         reset_ball()
 
 def reset_ball(): # devuelve la pelota al inicio
-    global velocidad_pelota_x, velocidad_pelota_y
+    global velocidad_pelota_x, velocidad_pelota_y, velocidad_pelota_original_x, velocidad_pelota_original_y
+    velocidad_pelota_x, velocidad_pelota_y = velocidad_pelota_original_x, velocidad_pelota_original_y 
     ball.center = (ancho // 2, alto // 2)
     velocidad_pelota_x *= -1
     velocidad_pelota_y *= -1
@@ -89,6 +104,7 @@ def reset_ball(): # devuelve la pelota al inicio
 
 # Bucle principal
 winner = None
+new_set_time = 100
 while True:
     clock.tick(60)
 
@@ -113,5 +129,8 @@ while True:
     # mostrar el juego
     keys = pygame.key.get_pressed()
     handle_movement(keys)
-    move_ball()
+    if new_set_time == 0:
+        move_ball()
+    else:
+        new_set_time -= 1
     draw()
