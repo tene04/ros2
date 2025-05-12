@@ -16,7 +16,7 @@ WINNER_FONT = pygame.font.SysFont("Arial", 60)
 # Variables de juego
 pala_ancho, pala_alto = 10, 100
 pelota = 15
-pala_velocidad = 6
+pala_velocidad = 8
 velocidad_pelota_x, velocidad_pelota_y = 8, 8 
 
 # Inicialización de objetos

@@ -1,0 +1,2 @@
+float32 y_position
+string player_name

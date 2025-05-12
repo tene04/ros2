@@ -1,0 +1,27 @@
+# crea las carpetas
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+ros2 pkg create --build-type ament_python pong_game
+
+# copiar los codigos de pong_game en los archivos pertinentes
+
+# construimos 
+cd ~/ros2_ws
+colcon build --packages-select pong_game
+source install/setup.bash
+
+# ejecutamos
+ros2 launch pong_game pong.launch.py
+
+# para resetear ...
+ros2 service call /reset_game pong_game/srv/Reset
+
+# para ajustar parámetros ...
+ros2 launch pong_game pong.launch.py paddle_speed:=7 max_games:=5
+
+# posibles errores
+sudo apt-get install python3-pygame
+
+# reintentar
+rm -rf build install log
+colcon build --packages-select pong_game
