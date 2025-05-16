@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from pong_interfaces.msg import PaddlePosition
+import sys
+import tty
+import termios
+import select
+import os
+import atexit
+
+
+class PaddleController(Node):
+    def __init__(self, player_name):
+        super().__init__(f'{player_name}_paddle')
+        self.player_name = player_name
+        self.publisher = self.create_publisher(PaddlePosition, f'{player_name}_position', 10)
+        self.paddle_speed = 5
+        self.y_position = 300
+        self.active = True
+
+        # Configuración robusta del terminal
+        self.fd = sys.stdin.fileno()
+        self.old_settings = termios.tcgetattr(self.fd)
+        tty.setraw(self.fd)
+
+        # Configuración adicional para mejor respuesta
+        new_settings = termios.tcgetattr(self.fd)
+        new_settings[3] = new_settings[3] & ~(termios.ECHO | termios.ICANON)
+        new_settings[6][termios.VMIN] = 1
+        new_settings[6][termios.VTIME] = 0
+        termios.tcsetattr(self.fd, termios.TCSADRAIN, new_settings)
+
+        # Registrar restauración al salir
+        atexit.register(self.restore_terminal)
+
+        self.get_logger().info(
+            f"Controlador {player_name} inicializado. Controles: {'W/S' if player_name == 'player1' else '↑/↓'}")
+
+    def restore_terminal(self):
+        if hasattr(self, 'old_settings'):
+            termios.tcsetattr(self.fd, termios.TCSADRAIN, self.old_settings)
+            os.system('stty sane')  # Restauración adicional
+
+    def get_key(self):
+        try:
+            rlist, _, _ = select.select([sys.stdin], [], [], 0.01)
+            if rlist:
+                char = sys.stdin.read(1)
+                if char == '\x1b':  # Secuencia de escape
+                    if select.select([sys.stdin], [], [], 0.02) == ([sys.stdin], [], []):
+                        char += sys.stdin.read(2)
+                return char
+        except:
+            self.restore_terminal()
+        return None
+
+    def update_position(self):
+        key = self.get_key()
+        moved = False
+
+        if key == 'q':  # Tecla para salir
+            self.active = False
+            return
+
+        if self.player_name == 'player1':
+            if key == 'w':
+                self.y_position -= self.paddle_speed
+                moved = True
+            elif key == 's':
+                self.y_position += self.paddle_speed
+                moved = True
+        else:  # player2
+            if key == '\x1b[A':
+                self.y_position -= self.paddle_speed
+                moved = True
+            elif key == '\x1b[B':
+                self.y_position += self.paddle_speed
+                moved = True
+
+        if moved:
+            self.y_position = max(0, min(600, self.y_position))
+            msg = PaddlePosition()
+            msg.y_position = float(self.y_position)
+            msg.player_name = self.player_name
+            self.publisher.publish(msg)
+
+
+def main(args=None):
+    # Limpiar configuración previa del terminal
+    os.system('stty sane')
+
+    rclpy.init(args=args)
+
+    if len(sys.argv) < 2:
+        print("Uso: paddle_node.py player1|player2")
+        return
+
+    player_name = sys.argv[1]
+    controller = PaddleController(player_name)
+
+    try:
+        while rclpy.ok() and controller.active:
+            controller.update_position()
+            rclpy.spin_once(controller, timeout_sec=0.01)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        controller.restore_terminal()
+        controller.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
