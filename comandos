@@ -1,0 +1,9 @@
+cd ~/ros2_ws
+colcon build --symlink-install --packages-select pong_interfaces
+source install/setup.bash
+
+colcon build --symlink-install --packages-select pong_game
+source install/setup.bash
+
+
+ejecutar primero game y luego las palas. Hay q  poner un freeze al inicio
