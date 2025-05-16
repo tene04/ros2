@@ -1,0 +1,403 @@
+[0.000000] (-) TimerEvent: {}
+[0.000271] (pong_interfaces) JobQueued: {'identifier': 'pong_interfaces', 'dependencies': OrderedDict()}
+[0.000470] (pong_game) JobQueued: {'identifier': 'pong_game', 'dependencies': OrderedDict({'pong_interfaces': '/home/alumno/ros2_ws/install/pong_interfaces'})}
+[0.000859] (pong_interfaces) JobStarted: {'identifier': 'pong_interfaces'}
+[0.007902] (pong_interfaces) JobProgress: {'identifier': 'pong_interfaces', 'progress': 'cmake'}
+[0.008347] (pong_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/alumno/ros2_ws/pong_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/alumno/ros2_ws/install/pong_interfaces'], 'cwd': '/home/alumno/ros2_ws/build/pong_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alumno', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/alumno/ros2_ws/install/pong_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alumno', 'OLDPWD': '/home/alumno/ros2_ws', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '15260', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/alumno/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alumno', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alumno', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alumno-TEKNOSLIM:@/tmp/.ICE-unix/15223,unix/alumno-TEKNOSLIM:/tmp/.ICE-unix/15223', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf11388e_7caf_4e20_8506_3de0c9968ac1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.150', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '2', 'AMENT_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_game:/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_WS': '/home/alumno/ros2_ws', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'WEBOTS_HOME': '/usr/local/webots', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alumno/ros2_ws/build/pong_interfaces', 'LC_ALL': 'es_ES.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy'}), 'shell': False}
+[0.062310] (pong_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.100020] (-) TimerEvent: {}
+[0.118918] (pong_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.134099] (pong_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200136] (-) TimerEvent: {}
+[0.215214] (pong_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.224553] (pong_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.224797] (pong_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.225176] (pong_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.234144] (pong_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300254] (-) TimerEvent: {}
+[0.323622] (pong_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.333330] (pong_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.333621] (pong_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.334091] (pong_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.336966] (pong_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.400301] (-) TimerEvent: {}
+[0.474906] (pong_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.500383] (-) TimerEvent: {}
+[0.575296] (pong_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.581095] (pong_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600489] (-) TimerEvent: {}
+[0.633844] (pong_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.678399] (pong_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.700596] (-) TimerEvent: {}
+[0.800808] (-) TimerEvent: {}
+[0.901032] (-) TimerEvent: {}
+[1.001264] (-) TimerEvent: {}
+[1.101485] (-) TimerEvent: {}
+[1.201700] (-) TimerEvent: {}
+[1.257205] (pong_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.301808] (-) TimerEvent: {}
+[1.402025] (-) TimerEvent: {}
+[1.502242] (-) TimerEvent: {}
+[1.602427] (-) TimerEvent: {}
+[1.663730] (pong_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.702544] (-) TimerEvent: {}
+[1.802788] (-) TimerEvent: {}
+[1.903010] (-) TimerEvent: {}
+[2.003223] (-) TimerEvent: {}
+[2.103466] (-) TimerEvent: {}
+[2.203683] (-) TimerEvent: {}
+[2.222360] (pong_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.225118] (pong_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.303796] (-) TimerEvent: {}
+[2.358865] (pong_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.403922] (-) TimerEvent: {}
+[2.504143] (-) TimerEvent: {}
+[2.604312] (-) TimerEvent: {}
+[2.704500] (-) TimerEvent: {}
+[2.781643] (pong_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.804631] (-) TimerEvent: {}
+[2.819909] (pong_interfaces) StdoutLine: {'line': b'-- Configuring done (2.8s)\n'}
+[2.855878] (pong_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.867565] (pong_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/alumno/ros2_ws/build/pong_interfaces\n'}
+[2.873596] (pong_interfaces) CommandEnded: {'returncode': 0}
+[2.874060] (pong_interfaces) JobProgress: {'identifier': 'pong_interfaces', 'progress': 'build'}
+[2.874767] (pong_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alumno/ros2_ws/build/pong_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/alumno/ros2_ws/build/pong_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alumno', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/alumno/ros2_ws/install/pong_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alumno', 'OLDPWD': '/home/alumno/ros2_ws', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '15260', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/alumno/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alumno', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alumno', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alumno-TEKNOSLIM:@/tmp/.ICE-unix/15223,unix/alumno-TEKNOSLIM:/tmp/.ICE-unix/15223', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf11388e_7caf_4e20_8506_3de0c9968ac1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.150', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '2', 'AMENT_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_game:/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_WS': '/home/alumno/ros2_ws', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'WEBOTS_HOME': '/usr/local/webots', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alumno/ros2_ws/build/pong_interfaces', 'LC_ALL': 'es_ES.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy'}), 'shell': False}
+[2.904946] (-) TimerEvent: {}
+[2.920696] (pong_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.929089] (pong_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_pong_interfaces\n'}
+[3.005055] (-) TimerEvent: {}
+[3.105269] (-) TimerEvent: {}
+[3.110402] (pong_interfaces) StdoutLine: {'line': b'[  2%] Built target pong_interfaces__rosidl_generator_type_description\n'}
+[3.120686] (pong_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.129968] (pong_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.159891] (pong_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[3.160813] (pong_interfaces) StdoutLine: {'line': b'creating pong_interfaces.egg-info\n'}
+[3.184052] (pong_interfaces) StdoutLine: {'line': b'writing pong_interfaces.egg-info/PKG-INFO\n'}
+[3.184233] (pong_interfaces) StdoutLine: {'line': b'writing dependency_links to pong_interfaces.egg-info/dependency_links.txt\n'}
+[3.184388] (pong_interfaces) StdoutLine: {'line': b'writing top-level names to pong_interfaces.egg-info/top_level.txt\n'}
+[3.184560] (pong_interfaces) StdoutLine: {'line': b"writing manifest file 'pong_interfaces.egg-info/SOURCES.txt'\n"}
+[3.205338] (-) TimerEvent: {}
+[3.254024] (pong_interfaces) StdoutLine: {'line': b"reading manifest file 'pong_interfaces.egg-info/SOURCES.txt'\n"}
+[3.254502] (pong_interfaces) StdoutLine: {'line': b"writing manifest file 'pong_interfaces.egg-info/SOURCES.txt'\n"}
+[3.282916] (pong_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_pong_interfaces_egg\n'}
+[3.305422] (-) TimerEvent: {}
+[3.405650] (-) TimerEvent: {}
+[3.447330] (pong_interfaces) StdoutLine: {'line': b'[  6%] Built target pong_interfaces__cpp\n'}
+[3.477449] (pong_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/msg/detail/paddle_position__functions.c.o\x1b[0m\n'}
+[3.477664] (pong_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/msg/detail/paddle_position__description.c.o\x1b[0m\n'}
+[3.477751] (pong_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/msg/detail/paddle_position__type_support.c.o\x1b[0m\n'}
+[3.477826] (pong_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/srv/detail/reset__functions.c.o\x1b[0m\n'}
+[3.477898] (pong_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/srv/detail/reset__description.c.o\x1b[0m\n'}
+[3.480003] (pong_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/srv/detail/reset__type_support.c.o\x1b[0m\n'}
+[3.505741] (-) TimerEvent: {}
+[3.550016] (pong_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libpong_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.587038] (pong_interfaces) StdoutLine: {'line': b'[ 22%] Built target pong_interfaces__rosidl_generator_c\n'}
+[3.600283] (pong_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.600464] (pong_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.600547] (pong_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.600622] (pong_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.600694] (pong_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.600767] (pong_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.605819] (-) TimerEvent: {}
+[3.706031] (-) TimerEvent: {}
+[3.806250] (-) TimerEvent: {}
+[3.851107] (pong_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pong_interfaces/msg/paddle_position__type_support.cpp.o\x1b[0m\n'}
+[3.855279] (pong_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pong_interfaces/msg/paddle_position__type_support.cpp.o\x1b[0m\n'}
+[3.892275] (pong_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pong_interfaces/msg/detail/paddle_position__type_support.c.o\x1b[0m\n'}
+[3.895655] (pong_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pong_interfaces/srv/reset__type_support.cpp.o\x1b[0m\n'}
+[3.906343] (-) TimerEvent: {}
+[3.912754] (pong_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pong_interfaces/msg/detail/paddle_position__type_support.cpp.o\x1b[0m\n'}
+[3.932894] (pong_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pong_interfaces/srv/detail/reset__type_support.c.o\x1b[0m\n'}
+[3.940404] (pong_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pong_interfaces/msg/detail/dds_fastrtps/paddle_position__type_support.cpp.o\x1b[0m\n'}
+[3.944244] (pong_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.960256] (pong_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pong_interfaces/msg/detail/paddle_position__type_support_c.cpp.o\x1b[0m\n'}
+[3.980258] (pong_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libpong_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.987292] (pong_interfaces) StdoutLine: {'line': b'[ 59%] Built target pong_interfaces__rosidl_typesupport_c\n'}
+[3.996225] (pong_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pong_interfaces/srv/detail/reset__type_support.cpp.o\x1b[0m\n'}
+[4.006436] (-) TimerEvent: {}
+[4.012292] (pong_interfaces) StdoutLine: {'line': b'[ 61%] Built target pong_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.023977] (pong_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pong_interfaces/srv/detail/dds_fastrtps/reset__type_support.cpp.o\x1b[0m\n'}
+[4.106529] (-) TimerEvent: {}
+[4.171876] (pong_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pong_interfaces/srv/reset__type_support.cpp.o\x1b[0m\n'}
+[4.206622] (-) TimerEvent: {}
+[4.230277] (pong_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pong_interfaces/srv/detail/reset__type_support_c.cpp.o\x1b[0m\n'}
+[4.306713] (-) TimerEvent: {}
+[4.406951] (-) TimerEvent: {}
+[4.424618] (pong_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.505704] (pong_interfaces) StdoutLine: {'line': b'[ 70%] Built target pong_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.507072] (-) TimerEvent: {}
+[4.556705] (pong_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.607204] (-) TimerEvent: {}
+[4.632388] (pong_interfaces) StdoutLine: {'line': b'[ 72%] Built target pong_interfaces__rosidl_typesupport_cpp\n'}
+[4.640730] (pong_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.707297] (-) TimerEvent: {}
+[4.718886] (pong_interfaces) StdoutLine: {'line': b'[ 75%] Built target pong_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.730352] (pong_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.801688] (pong_interfaces) StdoutLine: {'line': b'[ 77%] Built target pong_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.807380] (-) TimerEvent: {}
+[4.820551] (pong_interfaces) StdoutLine: {'line': b'[ 77%] Built target pong_interfaces\n'}
+[4.839694] (pong_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.907487] (-) TimerEvent: {}
+[5.007774] (-) TimerEvent: {}
+[5.108980] (-) TimerEvent: {}
+[5.211550] (-) TimerEvent: {}
+[5.276446] (pong_interfaces) StdoutLine: {'line': b'[ 79%] Built target pong_interfaces__py\n'}
+[5.298484] (pong_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pong_interfaces/msg/_paddle_position_s.c.o\x1b[0m\n'}
+[5.298769] (pong_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pong_interfaces/srv/_reset_s.c.o\x1b[0m\n'}
+[5.311646] (-) TimerEvent: {}
+[5.411889] (-) TimerEvent: {}
+[5.475725] (pong_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library libpong_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.512012] (-) TimerEvent: {}
+[5.534130] (pong_interfaces) StdoutLine: {'line': b'[ 86%] Built target pong_interfaces__rosidl_generator_py\n'}
+[5.556874] (pong_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.557164] (pong_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.560001] (pong_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/pong_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.612127] (-) TimerEvent: {}
+[5.665163] (pong_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.667878] (pong_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.674982] (pong_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.697639] (pong_interfaces) StdoutLine: {'line': b'[100%] Built target pong_interfaces_s__rosidl_typesupport_c\n'}
+[5.697815] (pong_interfaces) StdoutLine: {'line': b'[100%] Built target pong_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[5.709398] (pong_interfaces) StdoutLine: {'line': b'[100%] Built target pong_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[5.712244] (-) TimerEvent: {}
+[5.721998] (pong_interfaces) CommandEnded: {'returncode': 0}
+[5.722622] (pong_interfaces) JobProgress: {'identifier': 'pong_interfaces', 'progress': 'install'}
+[5.731178] (pong_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alumno/ros2_ws/build/pong_interfaces'], 'cwd': '/home/alumno/ros2_ws/build/pong_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alumno', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/alumno/ros2_ws/install/pong_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alumno', 'OLDPWD': '/home/alumno/ros2_ws', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '15260', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/alumno/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alumno', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alumno', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alumno-TEKNOSLIM:@/tmp/.ICE-unix/15223,unix/alumno-TEKNOSLIM:/tmp/.ICE-unix/15223', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf11388e_7caf_4e20_8506_3de0c9968ac1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.150', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '2', 'AMENT_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_game:/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_WS': '/home/alumno/ros2_ws', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'WEBOTS_HOME': '/usr/local/webots', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alumno/ros2_ws/build/pong_interfaces', 'LC_ALL': 'es_ES.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy'}), 'shell': False}
+[5.739671] (pong_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.739904] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/rosidl_interfaces/pong_interfaces\n'}
+[5.740016] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/msg/PaddlePosition.json\n'}
+[5.740186] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/srv/Reset.json\n'}
+[5.740515] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces\n'}
+[5.740723] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv\n'}
+[5.740830] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/reset.h\n'}
+[5.740939] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail\n'}
+[5.741033] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__functions.h\n'}
+[5.741106] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__description.c\n'}
+[5.741182] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__functions.c\n'}
+[5.741291] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.h\n'}
+[5.741367] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.c\n'}
+[5.741472] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__struct.h\n'}
+[5.741578] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg\n'}
+[5.741670] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/paddle_position.h\n'}
+[5.741743] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.741840] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail\n'}
+[5.741921] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.h\n'}
+[5.741996] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__description.c\n'}
+[5.742155] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__functions.h\n'}
+[5.742259] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__functions.c\n'}
+[5.742351] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__struct.h\n'}
+[5.742420] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.c\n'}
+[5.742507] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/library_path.sh\n'}
+[5.742706] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/library_path.dsv\n'}
+[5.742876] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_c.so\n'}
+[5.743332] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_c.so" to ""\n'}
+[5.743509] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces\n'}
+[5.743677] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv\n'}
+[5.743845] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail\n'}
+[5.743927] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_c.h\n'}
+[5.744004] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg\n'}
+[5.744078] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail\n'}
+[5.744152] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_fastrtps_c.h\n'}
+[5.744255] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.744358] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.744430] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.744530] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces\n'}
+[5.744606] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv\n'}
+[5.744678] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail\n'}
+[5.744751] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_introspection_c.h\n'}
+[5.744861] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.c\n'}
+[5.744929] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg\n'}
+[5.744995] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.745061] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail\n'}
+[5.745128] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_introspection_c.h\n'}
+[5.745196] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.c\n'}
+[5.745311] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.745381] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.745447] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_c.so\n'}
+[5.745594] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.745691] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces\n'}
+[5.745766] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv\n'}
+[5.745865] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail\n'}
+[5.745936] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__builder.hpp\n'}
+[5.746008] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__struct.hpp\n'}
+[5.746105] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.hpp\n'}
+[5.746177] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__traits.hpp\n'}
+[5.746273] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/reset.hpp\n'}
+[5.746377] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg\n'}
+[5.746457] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/paddle_position.hpp\n'}
+[5.746524] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.746639] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail\n'}
+[5.746734] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__traits.hpp\n'}
+[5.746805] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__builder.hpp\n'}
+[5.746903] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__struct.hpp\n'}
+[5.746971] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.hpp\n'}
+[5.747070] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces\n'}
+[5.747151] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv\n'}
+[5.747237] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail\n'}
+[5.747312] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.747385] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/dds_fastrtps\n'}
+[5.747500] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg\n'}
+[5.747574] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail\n'}
+[5.747645] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.747716] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/dds_fastrtps\n'}
+[5.747815] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.747885] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.748099] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.748195] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces\n'}
+[5.748295] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv\n'}
+[5.748366] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail\n'}
+[5.748438] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.748537] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.cpp\n'}
+[5.748607] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg\n'}
+[5.748684] (pong_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail\n'}
+[5.748756] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.cpp\n'}
+[5.748854] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.748923] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.749217] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.749319] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.749699] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.749797] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/pythonpath.sh\n'}
+[5.749915] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/pythonpath.dsv\n'}
+[5.750033] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info\n'}
+[5.750119] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.750212] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.750305] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.750392] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.750518] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces\n'}
+[5.750628] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv\n'}
+[5.750729] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/_reset.py\n'}
+[5.750824] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/_reset_s.c\n'}
+[5.750917] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/__init__.py\n'}
+[5.751007] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.751103] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/__init__.py\n'}
+[5.751194] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.751350] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so\n'}
+[5.751455] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.751564] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.751675] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[5.751762] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg\n'}
+[5.751851] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/_paddle_position_s.c\n'}
+[5.751940] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/_paddle_position.py\n'}
+[5.752043] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/__init__.py\n'}
+[5.791692] (pong_interfaces) StdoutLine: {'line': b"Listing '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces'...\n"}
+[5.791842] (pong_interfaces) StdoutLine: {'line': b"Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/__init__.py'...\n"}
+[5.791918] (pong_interfaces) StdoutLine: {'line': b"Listing '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg'...\n"}
+[5.791988] (pong_interfaces) StdoutLine: {'line': b"Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/__init__.py'...\n"}
+[5.792056] (pong_interfaces) StdoutLine: {'line': b"Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/_paddle_position.py'...\n"}
+[5.792122] (pong_interfaces) StdoutLine: {'line': b"Listing '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv'...\n"}
+[5.792187] (pong_interfaces) StdoutLine: {'line': b"Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/__init__.py'...\n"}
+[5.792279] (pong_interfaces) StdoutLine: {'line': b"Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/_reset.py'...\n"}
+[5.802258] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.808118] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.808313] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[5.808408] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.808484] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so\n'}
+[5.808562] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[5.808633] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_py.so\n'}
+[5.808702] (pong_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.808770] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/msg/PaddlePosition.idl\n'}
+[5.808837] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/srv/Reset.idl\n'}
+[5.808904] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/msg/PaddlePosition.msg\n'}
+[5.808973] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/srv/Reset.srv\n'}
+[5.809040] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/package_run_dependencies/pong_interfaces\n'}
+[5.809108] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/parent_prefix_path/pong_interfaces\n'}
+[5.809176] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/ament_prefix_path.sh\n'}
+[5.809638] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.809741] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/path.sh\n'}
+[5.809816] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/path.dsv\n'}
+[5.809887] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.bash\n'}
+[5.809957] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.sh\n'}
+[5.810027] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.zsh\n'}
+[5.810096] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.dsv\n'}
+[5.810165] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/package.dsv\n'}
+[5.810251] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/packages/pong_interfaces\n'}
+[5.810325] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.810394] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.810463] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.810532] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.810615] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.810683] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.810751] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.810830] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.810898] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.810973] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.811046] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.811116] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.811185] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.814429] (-) TimerEvent: {}
+[5.814683] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.814789] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.814865] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.814936] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.815005] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.815115] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.815286] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.815502] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.815692] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.818958] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.819099] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.819181] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfacesConfig.cmake\n'}
+[5.820395] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfacesConfig-version.cmake\n'}
+[5.820489] (pong_interfaces) StdoutLine: {'line': b'-- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/package.xml\n'}
+[5.820564] (pong_interfaces) CommandEnded: {'returncode': 0}
+[5.845555] (pong_interfaces) JobEnded: {'identifier': 'pong_interfaces', 'rc': 0}
+[5.845912] (pong_game) JobStarted: {'identifier': 'pong_game'}
+[5.915517] (-) TimerEvent: {}
+[6.017419] (-) TimerEvent: {}
+[6.117632] (-) TimerEvent: {}
+[6.217838] (-) TimerEvent: {}
+[6.318052] (-) TimerEvent: {}
+[6.418270] (-) TimerEvent: {}
+[6.518477] (-) TimerEvent: {}
+[6.618728] (-) TimerEvent: {}
+[6.687864] (pong_game) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pong_game', 'build', '--build-base', '/home/alumno/ros2_ws/build/pong_game/build', 'install', '--record', '/home/alumno/ros2_ws/build/pong_game/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/alumno/ros2_ws/src/pong_game', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alumno', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/alumno/ros2_ws/install/pong_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alumno', 'OLDPWD': '/home/alumno/ros2_ws', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '15260', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/alumno/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alumno', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'alumno', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/alumno-TEKNOSLIM:@/tmp/.ICE-unix/15223,unix/alumno-TEKNOSLIM:/tmp/.ICE-unix/15223', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cf11388e_7caf_4e20_8506_3de0c9968ac1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.150', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '2', 'AMENT_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_game:/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_WS': '/home/alumno/ros2_ws', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'WEBOTS_HOME': '/usr/local/webots', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/alumno/ros2_ws/build/pong_game', 'LC_ALL': 'es_ES.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/alumno/ros2_ws/build/pong_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/alumno/ros2_ws/install/pong_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[6.718863] (-) TimerEvent: {}
+[6.819089] (-) TimerEvent: {}
+[6.919285] (-) TimerEvent: {}
+[6.963426] (pong_game) StdoutLine: {'line': b'running egg_info\n'}
+[6.963710] (pong_game) StdoutLine: {'line': b'creating ../../build/pong_game/pong_game.egg-info\n'}
+[6.985017] (pong_game) StdoutLine: {'line': b'writing ../../build/pong_game/pong_game.egg-info/PKG-INFO\n'}
+[6.985229] (pong_game) StdoutLine: {'line': b'writing dependency_links to ../../build/pong_game/pong_game.egg-info/dependency_links.txt\n'}
+[6.985401] (pong_game) StdoutLine: {'line': b'writing entry points to ../../build/pong_game/pong_game.egg-info/entry_points.txt\n'}
+[6.985569] (pong_game) StdoutLine: {'line': b'writing requirements to ../../build/pong_game/pong_game.egg-info/requires.txt\n'}
+[6.985670] (pong_game) StdoutLine: {'line': b'writing top-level names to ../../build/pong_game/pong_game.egg-info/top_level.txt\n'}
+[6.985814] (pong_game) StdoutLine: {'line': b"writing manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'\n"}
+[7.019357] (-) TimerEvent: {}
+[7.029982] (pong_game) StdoutLine: {'line': b"reading manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'\n"}
+[7.030609] (pong_game) StdoutLine: {'line': b"writing manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'\n"}
+[7.030893] (pong_game) StdoutLine: {'line': b'running build\n'}
+[7.031018] (pong_game) StdoutLine: {'line': b'running build_py\n'}
+[7.031136] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/build/pong_game/build\n'}
+[7.031220] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/build/pong_game/build/lib\n'}
+[7.031351] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game\n'}
+[7.031423] (pong_game) StdoutLine: {'line': b'copying pong_game/__init__.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game\n'}
+[7.031493] (pong_game) StdoutLine: {'line': b'copying pong_game/game_node.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game\n'}
+[7.031590] (pong_game) StdoutLine: {'line': b'copying pong_game/paddle_node.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game\n'}
+[7.031662] (pong_game) StdoutLine: {'line': b'running install\n'}
+[7.037542] (pong_game) StdoutLine: {'line': b'running install_lib\n'}
+[7.059346] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game\n'}
+[7.059564] (pong_game) StdoutLine: {'line': b'copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/__init__.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game\n'}
+[7.059734] (pong_game) StdoutLine: {'line': b'copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/game_node.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game\n'}
+[7.059830] (pong_game) StdoutLine: {'line': b'copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/paddle_node.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game\n'}
+[7.060076] (pong_game) StdoutLine: {'line': b'byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/__init__.py to __init__.cpython-312.pyc\n'}
+[7.060319] (pong_game) StdoutLine: {'line': b'byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/game_node.py to game_node.cpython-312.pyc\n'}
+[7.061983] (pong_game) StdoutLine: {'line': b'byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/paddle_node.py to paddle_node.cpython-312.pyc\n'}
+[7.062675] (pong_game) StdoutLine: {'line': b'running install_data\n'}
+[7.062921] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/install/pong_game/share/ament_index\n'}
+[7.063075] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index\n'}
+[7.063154] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index/packages\n'}
+[7.063284] (pong_game) StdoutLine: {'line': b'copying resource/pong_game -> /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index/packages\n'}
+[7.063376] (pong_game) StdoutLine: {'line': b'copying package.xml -> /home/alumno/ros2_ws/install/pong_game/share/pong_game\n'}
+[7.063442] (pong_game) StdoutLine: {'line': b'creating /home/alumno/ros2_ws/install/pong_game/share/pong_game/launch\n'}
+[7.063507] (pong_game) StdoutLine: {'line': b'copying launch/pong.launch.py -> /home/alumno/ros2_ws/install/pong_game/share/pong_game/launch\n'}
+[7.063571] (pong_game) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.086095] (pong_game) StdoutLine: {'line': b'Copying ../../build/pong_game/pong_game.egg-info to /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game-0.0.0-py3.12.egg-info\n'}
+[7.086890] (pong_game) StdoutLine: {'line': b'running install_scripts\n'}
+[7.119467] (-) TimerEvent: {}
+[7.219675] (-) TimerEvent: {}
+[7.229515] (pong_game) StdoutLine: {'line': b'Installing game_node script to /home/alumno/ros2_ws/install/pong_game/lib/pong_game\n'}
+[7.229732] (pong_game) StdoutLine: {'line': b'Installing paddle_node script to /home/alumno/ros2_ws/install/pong_game/lib/pong_game\n'}
+[7.229926] (pong_game) StdoutLine: {'line': b"writing list of installed files to '/home/alumno/ros2_ws/build/pong_game/install.log'\n"}
+[7.253087] (pong_game) CommandEnded: {'returncode': 0}
+[7.257987] (pong_game) JobEnded: {'identifier': 'pong_game', 'rc': 0}
+[7.258535] (-) EventReactorShutdown: {}

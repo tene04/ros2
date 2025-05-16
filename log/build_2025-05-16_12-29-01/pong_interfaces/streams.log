@@ -1,0 +1,277 @@
+[0.009s] Invoking command in '/home/alumno/ros2_ws/build/pong_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alumno/ros2_ws/pong_interfaces -DCMAKE_INSTALL_PREFIX=/home/alumno/ros2_ws/install/pong_interfaces
+[0.062s] -- The C compiler identification is GNU 13.3.0
+[0.118s] -- The CXX compiler identification is GNU 13.3.0
+[0.133s] -- Detecting C compiler ABI info
+[0.214s] -- Detecting C compiler ABI info - done
+[0.224s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.224s] -- Detecting C compile features
+[0.224s] -- Detecting C compile features - done
+[0.233s] -- Detecting CXX compiler ABI info
+[0.323s] -- Detecting CXX compiler ABI info - done
+[0.333s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.333s] -- Detecting CXX compile features
+[0.333s] -- Detecting CXX compile features - done
+[0.336s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.474s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.575s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.580s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.633s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.678s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.256s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.663s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.222s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.224s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.358s] -- Found PythonExtra: /usr/bin/python3  
+[2.781s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.819s] -- Configuring done (2.8s)
+[2.855s] -- Generating done (0.0s)
+[2.867s] -- Build files have been written to: /home/alumno/ros2_ws/build/pong_interfaces
+[2.873s] Invoked command in '/home/alumno/ros2_ws/build/pong_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alumno/ros2_ws/pong_interfaces -DCMAKE_INSTALL_PREFIX=/home/alumno/ros2_ws/install/pong_interfaces
+[2.874s] Invoking command in '/home/alumno/ros2_ws/build/pong_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alumno/ros2_ws/build/pong_interfaces -- -j6 -l6
+[2.920s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.928s] [  2%] Built target ament_cmake_python_copy_pong_interfaces
+[3.110s] [  2%] Built target pong_interfaces__rosidl_generator_type_description
+[3.120s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.129s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.159s] running egg_info
+[3.160s] creating pong_interfaces.egg-info
+[3.183s] writing pong_interfaces.egg-info/PKG-INFO
+[3.183s] writing dependency_links to pong_interfaces.egg-info/dependency_links.txt
+[3.184s] writing top-level names to pong_interfaces.egg-info/top_level.txt
+[3.184s] writing manifest file 'pong_interfaces.egg-info/SOURCES.txt'
+[3.253s] reading manifest file 'pong_interfaces.egg-info/SOURCES.txt'
+[3.254s] writing manifest file 'pong_interfaces.egg-info/SOURCES.txt'
+[3.282s] [  6%] Built target ament_cmake_python_build_pong_interfaces_egg
+[3.447s] [  6%] Built target pong_interfaces__cpp
+[3.477s] [ 11%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/msg/detail/paddle_position__functions.c.o[0m
+[3.477s] [ 11%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/msg/detail/paddle_position__description.c.o[0m
+[3.477s] [ 13%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/msg/detail/paddle_position__type_support.c.o[0m
+[3.477s] [ 15%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/srv/detail/reset__functions.c.o[0m
+[3.477s] [ 18%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/srv/detail/reset__description.c.o[0m
+[3.479s] [ 20%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pong_interfaces/srv/detail/reset__type_support.c.o[0m
+[3.549s] [ 22%] [32m[1mLinking C shared library libpong_interfaces__rosidl_generator_c.so[0m
+[3.586s] [ 22%] Built target pong_interfaces__rosidl_generator_c
+[3.600s] [ 27%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.600s] [ 27%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.600s] [ 34%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.600s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.600s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.600s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.850s] [ 38%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pong_interfaces/msg/paddle_position__type_support.cpp.o[0m
+[3.855s] [ 40%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pong_interfaces/msg/paddle_position__type_support.cpp.o[0m
+[3.892s] [ 43%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pong_interfaces/msg/detail/paddle_position__type_support.c.o[0m
+[3.895s] [ 45%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pong_interfaces/srv/reset__type_support.cpp.o[0m
+[3.912s] [ 47%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pong_interfaces/msg/detail/paddle_position__type_support.cpp.o[0m
+[3.932s] [ 50%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pong_interfaces/srv/detail/reset__type_support.c.o[0m
+[3.940s] [ 52%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pong_interfaces/msg/detail/dds_fastrtps/paddle_position__type_support.cpp.o[0m
+[3.943s] [ 54%] [32m[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_c.so[0m
+[3.960s] [ 56%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pong_interfaces/msg/detail/paddle_position__type_support_c.cpp.o[0m
+[3.980s] [ 59%] [32m[1mLinking C shared library libpong_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.987s] [ 59%] Built target pong_interfaces__rosidl_typesupport_c
+[3.995s] [ 61%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pong_interfaces/srv/detail/reset__type_support.cpp.o[0m
+[4.012s] [ 61%] Built target pong_interfaces__rosidl_typesupport_introspection_c
+[4.023s] [ 63%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pong_interfaces/srv/detail/dds_fastrtps/reset__type_support.cpp.o[0m
+[4.171s] [ 65%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pong_interfaces/srv/reset__type_support.cpp.o[0m
+[4.230s] [ 68%] [32mBuilding CXX object CMakeFiles/pong_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pong_interfaces/srv/detail/reset__type_support_c.cpp.o[0m
+[4.424s] [ 70%] [32m[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.505s] [ 70%] Built target pong_interfaces__rosidl_typesupport_introspection_cpp
+[4.556s] [ 72%] [32m[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_cpp.so[0m
+[4.632s] [ 72%] Built target pong_interfaces__rosidl_typesupport_cpp
+[4.640s] [ 75%] [32m[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.718s] [ 75%] Built target pong_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.730s] [ 77%] [32m[1mLinking CXX shared library libpong_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.801s] [ 77%] Built target pong_interfaces__rosidl_typesupport_fastrtps_c
+[4.820s] [ 77%] Built target pong_interfaces
+[4.839s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.276s] [ 79%] Built target pong_interfaces__py
+[5.298s] [ 81%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pong_interfaces/msg/_paddle_position_s.c.o[0m
+[5.298s] [ 84%] [32mBuilding C object CMakeFiles/pong_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pong_interfaces/srv/_reset_s.c.o[0m
+[5.475s] [ 86%] [32m[1mLinking C shared library libpong_interfaces__rosidl_generator_py.so[0m
+[5.535s] [ 86%] Built target pong_interfaces__rosidl_generator_py
+[5.556s] [ 88%] [32mBuilding C object CMakeFiles/pong_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.556s] [ 90%] [32mBuilding C object CMakeFiles/pong_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.559s] [ 93%] [32mBuilding C object CMakeFiles/pong_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.664s] [ 95%] [32m[1mLinking C shared module rosidl_generator_py/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so[0m
+[5.667s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[5.674s] [100%] [32m[1mLinking C shared module rosidl_generator_py/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.697s] [100%] Built target pong_interfaces_s__rosidl_typesupport_c
+[5.697s] [100%] Built target pong_interfaces_s__rosidl_typesupport_introspection_c
+[5.709s] [100%] Built target pong_interfaces_s__rosidl_typesupport_fastrtps_c
+[5.721s] Invoked command in '/home/alumno/ros2_ws/build/pong_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alumno/ros2_ws/build/pong_interfaces -- -j6 -l6
+[5.731s] Invoking command in '/home/alumno/ros2_ws/build/pong_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alumno/ros2_ws/build/pong_interfaces
+[5.739s] -- Install configuration: ""
+[5.739s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/rosidl_interfaces/pong_interfaces
+[5.739s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/msg/PaddlePosition.json
+[5.739s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/srv/Reset.json
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/reset.h
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__functions.h
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__description.c
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__functions.c
+[5.740s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.h
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.c
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__struct.h
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/paddle_position.h
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.h
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__description.c
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__functions.h
+[5.741s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__functions.c
+[5.742s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__struct.h
+[5.742s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.c
+[5.742s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/library_path.sh
+[5.742s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/library_path.dsv
+[5.742s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_c.so
+[5.743s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_c.so" to ""
+[5.743s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces
+[5.743s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv
+[5.743s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail
+[5.743s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_c.h
+[5.743s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg
+[5.743s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail
+[5.743s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_fastrtps_c.h
+[5.743s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.744s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.744s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail
+[5.744s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_introspection_c.h
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.c
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg
+[5.744s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail
+[5.744s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_introspection_c.h
+[5.744s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.c
+[5.744s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_c.so
+[5.745s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.745s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_c.so
+[5.745s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_c.so" to ""
+[5.745s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces
+[5.745s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv
+[5.745s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail
+[5.745s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__builder.hpp
+[5.745s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__struct.hpp
+[5.745s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.hpp
+[5.745s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__traits.hpp
+[5.745s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/reset.hpp
+[5.746s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/paddle_position.hpp
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.746s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__traits.hpp
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__builder.hpp
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__struct.hpp
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.hpp
+[5.746s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces
+[5.746s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv
+[5.746s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail
+[5.746s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_fastrtps_cpp.hpp
+[5.747s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/dds_fastrtps
+[5.747s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg
+[5.747s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail
+[5.747s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_fastrtps_cpp.hpp
+[5.747s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/dds_fastrtps
+[5.747s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.747s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.747s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.747s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces
+[5.747s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv
+[5.748s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail
+[5.748s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__rosidl_typesupport_introspection_cpp.hpp
+[5.748s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/srv/detail/reset__type_support.cpp
+[5.748s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg
+[5.748s] -- Up-to-date: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail
+[5.748s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__type_support.cpp
+[5.748s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/include/pong_interfaces/pong_interfaces/msg/detail/paddle_position__rosidl_typesupport_introspection_cpp.hpp
+[5.748s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.748s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_cpp.so
+[5.749s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/pythonpath.sh
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/pythonpath.dsv
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[5.749s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/_reset.py
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/_reset_s.c
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/__init__.py
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/__init__.py
+[5.750s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/_pong_interfaces_s.ep.rosidl_typesupport_c.c
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/_paddle_position_s.c
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/_paddle_position.py
+[5.751s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/__init__.py
+[5.791s] Listing '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces'...
+[5.791s] Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/__init__.py'...
+[5.791s] Listing '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg'...
+[5.791s] Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/__init__.py'...
+[5.791s] Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/msg/_paddle_position.py'...
+[5.791s] Listing '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv'...
+[5.791s] Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/__init__.py'...
+[5.791s] Compiling '/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/srv/_reset.py'...
+[5.802s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.807s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so
+[5.808s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so
+[5.808s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages/pong_interfaces/pong_interfaces_s__rosidl_typesupport_c.so" to ""
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_py.so
+[5.808s] -- Set non-toolchain portion of runtime path of "/home/alumno/ros2_ws/install/pong_interfaces/lib/libpong_interfaces__rosidl_generator_py.so" to ""
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/msg/PaddlePosition.idl
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/srv/Reset.idl
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/msg/PaddlePosition.msg
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/srv/Reset.srv
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/package_run_dependencies/pong_interfaces
+[5.808s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/parent_prefix_path/pong_interfaces
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/ament_prefix_path.sh
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/ament_prefix_path.dsv
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/path.sh
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/environment/path.dsv
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.bash
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.sh
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.zsh
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/local_setup.dsv
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/package.dsv
+[5.809s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/ament_index/resource_index/packages/pong_interfaces
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_cExport.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cExport.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_cppExport.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.810s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cppExport.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_pyExport.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/export_pong_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.814s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.815s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.815s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.815s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.818s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.818s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.819s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfacesConfig.cmake
+[5.820s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/cmake/pong_interfacesConfig-version.cmake
+[5.820s] -- Installing: /home/alumno/ros2_ws/install/pong_interfaces/share/pong_interfaces/package.xml
+[5.820s] Invoked command in '/home/alumno/ros2_ws/build/pong_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno/ros2_ws/install/pong_game:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alumno/ros2_ws/build/pong_interfaces

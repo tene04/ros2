@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/pong_game/pong_game.egg-info
+writing ../../build/pong_game/pong_game.egg-info/PKG-INFO
+writing dependency_links to ../../build/pong_game/pong_game.egg-info/dependency_links.txt
+writing entry points to ../../build/pong_game/pong_game.egg-info/entry_points.txt
+writing requirements to ../../build/pong_game/pong_game.egg-info/requires.txt
+writing top-level names to ../../build/pong_game/pong_game.egg-info/top_level.txt
+writing manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'
+reading manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'
+writing manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/alumno/ros2_ws/build/pong_game/build
+creating /home/alumno/ros2_ws/build/pong_game/build/lib
+creating /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+copying pong_game/__init__.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+copying pong_game/game_node.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+copying pong_game/paddle_node.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+running install
+running install_lib
+creating /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/__init__.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/game_node.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/paddle_node.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/game_node.py to game_node.cpython-312.pyc
+byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/paddle_node.py to paddle_node.cpython-312.pyc
+running install_data
+creating /home/alumno/ros2_ws/install/pong_game/share/ament_index
+creating /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index
+creating /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index/packages
+copying resource/pong_game -> /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index/packages
+copying package.xml -> /home/alumno/ros2_ws/install/pong_game/share/pong_game
+creating /home/alumno/ros2_ws/install/pong_game/share/pong_game/launch
+copying launch/pong.launch.py -> /home/alumno/ros2_ws/install/pong_game/share/pong_game/launch
+running install_egg_info
+Copying ../../build/pong_game/pong_game.egg-info to /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game-0.0.0-py3.12.egg-info
+running install_scripts
+Installing game_node script to /home/alumno/ros2_ws/install/pong_game/lib/pong_game
+Installing paddle_node script to /home/alumno/ros2_ws/install/pong_game/lib/pong_game
+writing list of installed files to '/home/alumno/ros2_ws/build/pong_game/install.log'

@@ -1,0 +1,43 @@
+[0.843s] Invoking command in '/home/alumno/ros2_ws/src/pong_game': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alumno/ros2_ws/build/pong_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pong_game build --build-base /home/alumno/ros2_ws/build/pong_game/build install --record /home/alumno/ros2_ws/build/pong_game/install.log --single-version-externally-managed install_data
+[1.118s] running egg_info
+[1.118s] creating ../../build/pong_game/pong_game.egg-info
+[1.139s] writing ../../build/pong_game/pong_game.egg-info/PKG-INFO
+[1.139s] writing dependency_links to ../../build/pong_game/pong_game.egg-info/dependency_links.txt
+[1.140s] writing entry points to ../../build/pong_game/pong_game.egg-info/entry_points.txt
+[1.140s] writing requirements to ../../build/pong_game/pong_game.egg-info/requires.txt
+[1.140s] writing top-level names to ../../build/pong_game/pong_game.egg-info/top_level.txt
+[1.140s] writing manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'
+[1.184s] reading manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'
+[1.185s] writing manifest file '../../build/pong_game/pong_game.egg-info/SOURCES.txt'
+[1.185s] running build
+[1.185s] running build_py
+[1.185s] creating /home/alumno/ros2_ws/build/pong_game/build
+[1.185s] creating /home/alumno/ros2_ws/build/pong_game/build/lib
+[1.185s] creating /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+[1.186s] copying pong_game/__init__.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+[1.186s] copying pong_game/game_node.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+[1.186s] copying pong_game/paddle_node.py -> /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game
+[1.186s] running install
+[1.192s] running install_lib
+[1.214s] creating /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+[1.214s] copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/__init__.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+[1.214s] copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/game_node.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+[1.214s] copying /home/alumno/ros2_ws/build/pong_game/build/lib/pong_game/paddle_node.py -> /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game
+[1.214s] byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/__init__.py to __init__.cpython-312.pyc
+[1.214s] byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/game_node.py to game_node.cpython-312.pyc
+[1.216s] byte-compiling /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game/paddle_node.py to paddle_node.cpython-312.pyc
+[1.217s] running install_data
+[1.217s] creating /home/alumno/ros2_ws/install/pong_game/share/ament_index
+[1.217s] creating /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index
+[1.217s] creating /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index/packages
+[1.217s] copying resource/pong_game -> /home/alumno/ros2_ws/install/pong_game/share/ament_index/resource_index/packages
+[1.218s] copying package.xml -> /home/alumno/ros2_ws/install/pong_game/share/pong_game
+[1.218s] creating /home/alumno/ros2_ws/install/pong_game/share/pong_game/launch
+[1.218s] copying launch/pong.launch.py -> /home/alumno/ros2_ws/install/pong_game/share/pong_game/launch
+[1.218s] running install_egg_info
+[1.240s] Copying ../../build/pong_game/pong_game.egg-info to /home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages/pong_game-0.0.0-py3.12.egg-info
+[1.241s] running install_scripts
+[1.384s] Installing game_node script to /home/alumno/ros2_ws/install/pong_game/lib/pong_game
+[1.384s] Installing paddle_node script to /home/alumno/ros2_ws/install/pong_game/lib/pong_game
+[1.384s] writing list of installed files to '/home/alumno/ros2_ws/build/pong_game/install.log'
+[1.407s] Invoked command in '/home/alumno/ros2_ws/src/pong_game' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/alumno/ros2_ws/build/pong_game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_interfaces/lib/python3.12/site-packages:/home/alumno/ros2_ws/install/pong_game/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pong_game build --build-base /home/alumno/ros2_ws/build/pong_game/build install --record /home/alumno/ros2_ws/build/pong_game/install.log --single-version-externally-managed install_data
